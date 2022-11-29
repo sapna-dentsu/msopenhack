@@ -15,7 +15,7 @@ module.exports = async function (context, req) {
     } else if (method === 'POST') {
         const productId = req.body && req.body.productId;
         const responseMessage = productId
-            ? "The product name for your product id " + productId + " is Starfruit Explosion and the description is This starfruit ice cream is out of this world!"
+            ? "The product name for your product id " + productId + " is Starfruit Explosion"
             : "This HTTP triggered function executed successfully. Pass a productId in the request body for a personalized response.";
             context.res = {
                 // status: 200, /* Defaults to 200 */
